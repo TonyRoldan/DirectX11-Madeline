@@ -1,4 +1,7 @@
 <h1>Madeline</h1>
+<img src="https://i.imgur.com/RuiVBGf.png" height="80%" width="80%"/>
+<br />
+<br />
 
 <h2>Description</h2>
 A 2.5D platforming game where you jump, climb and dash your way to the top of a snowy mountain. This project exhibits my work in DirectX11, creating graphics functionality and engine features such as collision visualization, animation and UI. 
