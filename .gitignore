@@ -1,0 +1,11 @@
+# Contents of build folder should always be ignored in CMake
+*/build
+*/Build
+*/BUILD
+*/biuld
+*/hamberguessa
+*/hamberger
+*/hamborger
+*/bamhurger
+*/bramfrushkaa
+*.cso

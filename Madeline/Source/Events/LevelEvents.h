@@ -1,0 +1,23 @@
+#ifndef LEVELEVENTS_H
+#define LEVELEVENTS_H
+
+enum LEVEL_EVENT
+{
+	HIT_SCENE_EXIT,
+	ENTER_SCENE_BEGIN,
+	ENTER_SCENE_DONE,
+	LOAD_SCENE,
+	LOAD_SCENE_DONE,
+	UNLOAD_SCENE,
+	UNLOAD_SCENE_DONE,
+	SHOW_SCENE,
+	HIDE_SCENE
+};
+
+struct LEVEL_EVENT_DATA
+{
+	USHORT sceneIndex;
+	flecs::entity sceneExit;
+};
+
+#endif
