@@ -11,6 +11,8 @@ public:
 	virtual ~GameConfig();
 
 	bool GameConfig::LoadFromFile();
+	bool LoadIniFile(const std::string& filePath);
+		
 };
 
 #endif
