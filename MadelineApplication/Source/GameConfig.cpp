@@ -65,16 +65,21 @@ bool GameConfig::LoadFromFile()
         std::cout << "Defaults Last Modified: " << defaultsTime.time_since_epoch().count() << std::endl;
         std::cout << "Saved Last Modified: " << savedTime.time_since_epoch().count() << std::endl;
 
-        // Load the newest file
-        if (defaultsTime > savedTime)
+        if (std::filesystem::exists(defaults)) 
+        {
             return LoadIniFile("../defaults.ini");
-        else
-            return LoadIniFile("../saved.ini");
+        }
+
+        //// Load the newest file
+        //if (defaultsTime > savedTime)
+        //    return LoadIniFile("../defaults.ini");
+        //else
+        //    return LoadIniFile("../saved.ini");
     }
-    else if (std::filesystem::exists(defaults)) {
+    /*else if (std::filesystem::exists(defaults)) {
         return LoadIniFile("../defaults.ini");
             
-    }
+    }*/
 
     return false;  // No valid INI file found
 }
