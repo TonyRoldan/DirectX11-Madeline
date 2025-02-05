@@ -47,12 +47,12 @@ bool GameConfig::LoadIniFile(const std::string& filePath)
         outFile.close();
     }
 
-    // Load the INI file using ini::IniFile::load()
+    // Load the INI file
     (*this).load(filePath);
     return true;
 }
 
-// Modified LoadFromFile function
+
 bool GameConfig::LoadFromFile()
 {
     const std::string defaults = "../defaults.ini";
@@ -62,7 +62,10 @@ bool GameConfig::LoadFromFile()
         auto defaultsTime = std::filesystem::last_write_time(defaults);
         auto savedTime = std::filesystem::last_write_time(saved);
 
-        // Load the newest file, handling UTF-8 BOM
+        std::cout << "Defaults Last Modified: " << defaultsTime.time_since_epoch().count() << std::endl;
+        std::cout << "Saved Last Modified: " << savedTime.time_since_epoch().count() << std::endl;
+
+        // Load the newest file
         if (defaultsTime > savedTime)
             return LoadIniFile("../defaults.ini");
         else
