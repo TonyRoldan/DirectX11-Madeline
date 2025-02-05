@@ -21,6 +21,35 @@ A 2.5D platforming game where you jump, climb and dash your way to the top of a 
 - <b>Jira</b>
 - <b>Blender</b>
 
+
+<h2>How to Play:</h2>
+
+Download Zip File: <br/>
+<img src="https://i.imgur.com/kVQOjCF.png" height="80%" width="80%"/>
+<br />
+<br />
+
+Un-zip the Downloaded File: <br/>
+<img src="https://i.imgur.com/iDZ5wDQ.png" height="80%" width="80%"/>
+<br />
+<br />
+
+Path to the Application .exe: <br/>
+<img src="https://i.imgur.com/e3Gpw60.png" height="80%" width="80%"/>
+<br />
+<br />
+
+Allow Permission to Run Application: <br/>
+(If you are not comfortable with this feel free to just look at the samples!) <br/>
+<img src="https://i.imgur.com/XJ0MFuL.png" height="80%" width="80%"/>
+<br />
+<br />
+
+Open the README at this path for instructions: <br/>
+<img src="https://i.imgur.com/f2O8GiO.png" height="80%" width="80%"/>
+<br />
+<br />
+
 <h2>Contribution Samples:</h2>
 
 Dynamic Letterboxed UI Scaling: <br/>
